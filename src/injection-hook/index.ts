@@ -5,6 +5,7 @@ import updateDotenv from "update-dotenv";
 
 export default defineHook(({ init }, { env }) => {
   const initEvent = env["DOPPLER_INIT_EVENT"] ?? "cli.before";
+
   init(initEvent, async () => {
     const projectName = env["DOPPLER_PROJECT"];
     const configName = env["DOPPLER_CONFIG"];

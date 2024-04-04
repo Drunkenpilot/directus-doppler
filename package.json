@@ -1,8 +1,8 @@
 {
-  "name": "directus-doppler",
-  "description": "An directus extensions for using Doppler",
+  "name": "directus-extension-doppler",
+  "description": "A directus extension for using Doppler",
   "icon": "extension",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "keywords": [
     "directus",
     "directus-extension",
@@ -21,8 +21,18 @@
     "entries": [
       {
         "type": "hook",
-        "name": "env-vars-injection",
-        "source": "src/env-vars-injection/index.ts"
+        "name": "injection-hook",
+        "source": "src/injection-hook/index.ts"
+      },
+      {
+        "type": "module",
+        "name": "monitoring-module",
+        "source": "src/monitoring-module/index.ts"
+      },
+      {
+        "type": "endpoint",
+        "name": "environment-endpoint",
+        "source": "src/environment-endpoint/index.ts"
       }
     ],
     "host": "^10.10.0"
@@ -36,6 +46,9 @@
   "devDependencies": {
     "@directus/extensions-sdk": "11.0.2",
     "@dopplerhq/node-sdk": "^1.2.0",
-    "update-dotenv": "^1.1.1"
+    "@types/node": "^20.12.4",
+    "typescript": "^5.4.3",
+    "update-dotenv": "^1.1.1",
+    "vue": "^3.4.21"
   }
 }
