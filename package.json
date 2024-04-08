@@ -2,7 +2,7 @@
   "name": "directus-extension-doppler",
   "description": "A directus extension for using Doppler",
   "icon": "extension",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "directus",
     "directus-extension",
@@ -50,5 +50,11 @@
     "typescript": "^5.4.3",
     "update-dotenv": "^1.1.1",
     "vue": "^3.4.21"
-  }
+  },
+  "homepage": "https://github.com/Drunkenpilot/directus-doppler#readme",
+  "bugs": {
+    "url": "https://github.com/Drunkenpilot/directus-doppler/issues",
+    "email": "info@betalife.be"
+  },
+  "license": "BSD-3-Clause"
 }

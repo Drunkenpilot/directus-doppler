@@ -38,3 +38,9 @@ Use DOPPLER_INIT_EVENT to change event key;
 #### Monitoring Module
 Active Doppler monitoring module in Directus Admin Settings Page.
 Monitoring page shows current project, config, token values. 
+
+#### Issues
+https://github.com/Drunkenpilot/directus-doppler/issues
+
+#### License
+BSD-3-Clause
